@@ -3,7 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import CoffeeMemory from "../public/coffee_memory.jpeg";
+import CoffeeMemory from "../public/images/coffee_memory.jpeg";
 import Button from "./components/Button";
 import Heading1 from "./components/Heading1";
 import Heading3 from "./components/Heading3";
@@ -17,10 +17,15 @@ export const ProjectList = () => {
       <Image
         src={CoffeeMemory}
         alt="Coffee Memory"
-        className="w-[545px] h-[406px] rounded-lg shrink-0"
+        className="w-[565px] h-[426px] rounded-lg shrink-0"
       ></Image>
       <div>
-        <Heading1 text="Coffee Memory" uppercase={true} letterSpacing={4.4} marginBottom={16} />
+        <Heading1
+          text="Coffee Memory"
+          uppercase={true}
+          letterSpacing={4.4}
+          marginBottom={7}
+        />
         <Heading3 text="UX Design, UI, Research" />
         <Paragraph
           text="Coffee Memory preserves the memorable notes people write on coffee shop walls without the mess."

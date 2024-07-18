@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import {fontFamily} from "tailwindcss/defaultTheme"
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -21,15 +21,9 @@ const config: Config = {
         brown: "#ffd8be",
       },
       fontFamily: {
-        "barlow-condensed": [
-          "var(--font-barlow-condensed)",
-          ...fontFamily.sans,
-        ],
-        "encode-sans-condensed": [
-          "var(--font-encode-sans-condensed)",
-          ...fontFamily.sans,
-        ],
-        nunito: ["var(--font-nunito)", ...fontFamily.sans],
+        "barlow-condensed": ["Barlow Condensed", ...fontFamily.sans],
+        "encode-sans-condensed": ["Encode Sans Condensed", ...fontFamily.sans],
+        nunito: ["Nunito", ...fontFamily.sans],
       },
     },
   },

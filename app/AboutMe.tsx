@@ -1,7 +1,7 @@
 import React from "react";
 import Heading1 from "./components/Heading1";
 import Image from "next/image";
-import Me from "../public/about_me.png";
+import Me from "../public/images/about_me.png";
 import Paragraph from "./components/Paragraph";
 import Quote from "./components/Quote";
 
@@ -13,7 +13,7 @@ const AboutMe = () => {
         <Image
           src={Me}
           alt="Stefani"
-          className="w-[545px] h-[520px] rounded-lg shrink-0"
+          className="w-[565px] h-[524px] rounded-lg object-cover shrink-0"
         ></Image>
 
         <div>

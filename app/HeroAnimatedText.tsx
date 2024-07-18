@@ -1,16 +1,21 @@
 import React from "react";
+import styles from "./custom.module.css";
 
 interface Props {
   text: string;
+  imageSrc?: string;
 }
 
-// TODO: add video background
-// TODO: add outline width and color
-const HeroAnimatedText = ({ text }: Props) => {
+const HeroAnimatedText = ({ text, imageSrc }: Props) => {
   return (
-    <div className="inline-block leading-none p-0 m-0 text-[260px] font-bold text-primary font-barlow-condensed">
+    <h1
+      className={styles.heroText}
+      style={
+        { "--background-image": `url(${imageSrc})` } as React.CSSProperties
+      }
+    >
       {text}
-    </div>
+    </h1>
   );
 };
 

@@ -32,9 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          ${barlowCondensed.className}
-          ${encodeSansCondensed.className}
-          ${nunito.className}
+          ${barlowCondensed.variable}
+          ${encodeSansCondensed.variable}
+          ${nunito.variable}
         bg-background text-white`}
       >
         {children}

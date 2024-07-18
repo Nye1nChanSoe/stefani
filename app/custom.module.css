@@ -1,0 +1,25 @@
+/* styles/globals.css */
+
+.heroText {
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  cursor: pointer;
+  font-size: 390px; /* Adjust size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b388eb; /* Default text color */
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-image 0.4s ease-in-out, color 0.4s ease-in-out; /* Smooth transition */
+  line-height: 1; /* Adjust as needed */
+  background-image: var(
+    --background-image
+  ); /* Default empty or fallback image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heroText:hover {
+  color: transparent; /* Text color on hover */
+}
