@@ -1,7 +1,6 @@
 import AboutMe from "./AboutMe";
 import Divider from "./components/Divider";
 import Heading1 from "./components/Heading1";
-import Test from "./components/Test";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import { ProjectList } from "./ProjectList";
