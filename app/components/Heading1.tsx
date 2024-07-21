@@ -17,7 +17,7 @@ const Heading1 = ({
 }: Props) => {
   return (
     <h1
-      className={`text-[40px] font-bold font-encode-sans-condensed ${
+      className={`text-[40px] font-extrabold font-encode-sans-condensed ${
         uppercase ? "uppercase" : ""
       }`}
       style={{

@@ -5,6 +5,7 @@ import {
   Nunito,
 } from "next/font/google";
 import "./globals.css";
+import Footer from "./Footer";
 
 const barlowCondensed = Barlow_Condensed({
   weight: "700",
@@ -38,6 +39,7 @@ export default function RootLayout({
         bg-background text-white`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

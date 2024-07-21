@@ -49,7 +49,7 @@ const Paragraph = ({
   return (
     <p
       className={`text-[20px] ${uppercase ? "uppercase" : ""} ${
-        bold ? "font-bold" : ""
+        bold ? "font-semibold" : ""
       } ${fontClass} ${colorClass}`}
       style={{
         marginTop: marginTop ? `${marginTop}px` : undefined,

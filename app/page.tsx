@@ -7,18 +7,15 @@ import { ProjectList } from "./ProjectList";
 
 export default function Home() {
   return (
-    <main>
-      <div className="container px-[60px] mx-auto">
-        <Hero />
-        <Divider />
-        <div className="flex justify-between">
-          <Heading1 text="UX & UI Designer" />
-          <Heading1 text="Based in Bangkok" />
-        </div>
-        <ProjectList />
-        <AboutMe />
+    <main className="container px-[60px] mx-auto">
+      <Hero />
+      <Divider />
+      <div className="flex justify-between">
+        <Heading1 text="UX & UI Designer" />
+        <Heading1 text="Based in Bangkok" />
       </div>
-      <Footer />
+      <ProjectList />
+      <AboutMe />
     </main>
   );
 }
