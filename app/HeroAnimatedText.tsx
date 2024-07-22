@@ -13,6 +13,7 @@ const HeroAnimatedText = ({ text, imageSrc }: Props) => {
       style={
         { "--background-image": `url(${imageSrc})` } as React.CSSProperties
       }
+      data-text={text}
     >
       {text}
     </h1>

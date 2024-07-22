@@ -1,5 +1,3 @@
-/* styles/globals.css */
-
 .heroText {
   display: inline-block;
   font-family: "Barlow Condensed", sans-serif;
@@ -18,8 +16,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative; /* Needed for pseudo-element positioning */
+}
+
+.heroText::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  text-shadow: -6px -6px 0 #b388eb, 6px -6px 0 #b388eb, -6px 6px 0 #b388eb,
+    6px 6px 0 #b388eb, 0 -6px 0 #b388eb, 0 6px 0 #b388eb, -6px 0 0 #b388eb,
+    6px 0 0 #b388eb;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .heroText:hover {
   color: transparent; /* Text color on hover */
+}
+
+.heroText:hover::before {
+  opacity: 1; /* Show stroke on hover */
 }
