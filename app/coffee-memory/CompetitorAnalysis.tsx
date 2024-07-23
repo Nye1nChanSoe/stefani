@@ -2,7 +2,9 @@ import React from "react";
 import Heading1 from "../components/Heading1";
 import Paragraph from "../components/Paragraph";
 import Heading2 from "../components/Heading2";
-import TableCompetitorAnalysis from "./(components)/Table";
+import Image from "next/image";
+
+import TableAnalysis from "../../public/images/table.jpeg";
 
 interface Props {
   marginTop?: number;
@@ -74,7 +76,7 @@ const CompetitorAnalysis = ({
           letterSpacing={1.2}
         />
       </div>
-      <TableCompetitorAnalysis />
+      <Image src={TableAnalysis} alt="Analysis Table" className="rounded-lg" />
       <div>
         <Heading2
           text="Key Takeaway"
