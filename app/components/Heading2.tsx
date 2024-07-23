@@ -10,7 +10,7 @@ interface Props {
   letterSpacing?: number;
 }
 
-const Heading1 = ({
+const Heading2 = ({
   text,
   uppercase,
   fontSize,
@@ -20,20 +20,19 @@ const Heading1 = ({
   letterSpacing,
 }: Props) => {
   return (
-    <h1
-      className={`text-[40px] font-bold font-open-sans ${
+    <h2
+      className={`text-[28px] font-bold font-open-sans ${
         uppercase ? "uppercase" : ""
       } text-${color}`}
       style={{
-        fontSize: fontSize ? `${fontSize}px` : "40px",
         marginTop: marginTop ? `${marginTop}px` : undefined,
         marginBottom: marginBottom ? `${marginBottom}px` : undefined,
         letterSpacing: letterSpacing ? `${letterSpacing}px` : undefined,
       }}
     >
       {text}
-    </h1>
+    </h2>
   );
 };
 
-export default Heading1;
+export default Heading2;

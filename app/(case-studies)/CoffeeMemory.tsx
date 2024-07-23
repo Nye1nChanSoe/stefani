@@ -44,7 +44,7 @@ const CoffeeMemory = ({
         </div>
         <Paragraph
           text="Coffee Memory preserves the memorable notes without the mess, helping coffee shops and people create lasting memories without dirtying walls."
-          letterSpacing={2.4}
+          letterSpacing={1.2}
         />
         <Link
           className="w-fit px-[30px] py-[16px] rounded-lg tracking-wider bg-primary text-white font-open-sans shadow-md text-[20px] font-bold focus:outline-none transition-all duration-500 hover:scale-105 hover:text-background"
