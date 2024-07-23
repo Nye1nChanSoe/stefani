@@ -3,36 +3,21 @@ import React from "react";
 interface Props {
   text: string;
   uppercase?: boolean;
-  bold?: boolean;
   marginTop?: number;
   marginBottom?: number;
   letterSpacing?: number;
   color?: "primary" | "white" | "background" | "brown";
-  fontFamily?: "encode-sans" | "barlow" | "nunito";
+  fontFamily?: "open-sans" | "barlow";
 }
 
 const Paragraph = ({
   text,
   uppercase,
-  bold,
   marginTop,
   marginBottom,
   letterSpacing,
   color,
-  fontFamily,
 }: Props) => {
-  const fontClass = (() => {
-    switch (fontFamily) {
-      case "encode-sans":
-        return "font-encode-sans-condensed";
-      case "barlow":
-        return "font-barlow-condensed";
-      case "nunito":
-        return "font-nunito";
-      default:
-        return "";
-    }
-  })();
   const colorClass = (() => {
     switch (color) {
       case "primary":
@@ -48,9 +33,9 @@ const Paragraph = ({
 
   return (
     <p
-      className={`text-[20px] ${uppercase ? "uppercase" : ""} ${
-        bold ? "font-semibold" : ""
-      } ${fontClass} ${colorClass}`}
+      className={`text-[20px] font-open-sans font-bold leading-8 ${
+        uppercase ? "uppercase" : ""
+      } ${colorClass}`}
       style={{
         marginTop: marginTop ? `${marginTop}px` : undefined,
         marginBottom: marginBottom ? `${marginBottom}px` : undefined,

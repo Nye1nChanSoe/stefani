@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Barlow_Condensed,
-  Encode_Sans_Condensed,
-  Nunito,
-} from "next/font/google";
+import { Barlow_Condensed, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "./Footer";
 
@@ -12,12 +8,11 @@ const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
   variable: "--font-barlow",
 });
-const encodeSansCondensed = Encode_Sans_Condensed({
+const openSans = Open_Sans({
   weight: "500",
   subsets: ["latin"],
   variable: "--font-encode",
 });
-const nunito = Nunito({ subsets: ["latin"], variable: "--font-barlow" });
 
 export const metadata: Metadata = {
   title: "Stefani's Portfolio",
@@ -34,8 +29,7 @@ export default function RootLayout({
       <body
         className={`
           ${barlowCondensed.variable}
-          ${encodeSansCondensed.variable}
-          ${nunito.variable}
+          ${openSans.variable}
         bg-background text-white`}
       >
         {children}
