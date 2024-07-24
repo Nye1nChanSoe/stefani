@@ -1,5 +1,4 @@
 import React from "react";
-import Spacer from "./(components)/Spacer";
 import SectionFlexContainer from "./(components)/SectionFlexContainer";
 import Heading1 from "../components/Heading1";
 import Paragraph from "../components/Paragraph";
@@ -18,12 +17,14 @@ const TheThingsTwo = ({
   marginRight,
 }: Props) => {
   return (
-    <Spacer
-      y={160}
-      marginTop={marginTop}
-      marginBottom={marginBottom}
-      marginLeft={marginLeft}
-      marginRight={marginRight}
+    <section
+      className="space-y-[160px]"
+      style={{
+        marginTop: marginTop ? `${marginTop}px` : undefined,
+        marginBottom: marginBottom ? `${marginBottom}px` : undefined,
+        marginLeft: marginLeft ? `${marginLeft}px` : undefined,
+        marginRight: marginRight ? `${marginRight}px` : undefined,
+      }}
     >
       <SectionFlexContainer
         left={
@@ -89,7 +90,7 @@ const TheThingsTwo = ({
           />
         }
       />
-    </Spacer>
+    </section>
   );
 };
 
