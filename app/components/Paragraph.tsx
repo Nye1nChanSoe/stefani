@@ -33,7 +33,7 @@ const Paragraph = ({
 
   return (
     <p
-      className={`text-[20px] font-open-sans font-bold leading-8 ${
+      className={`text-[20px] font-open-sans font-bold leading-8 text-justify ${
         uppercase ? "uppercase" : ""
       } ${colorClass}`}
       style={{

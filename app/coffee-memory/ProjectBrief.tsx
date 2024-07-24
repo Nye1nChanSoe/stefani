@@ -2,6 +2,9 @@ import React from "react";
 import TextSection1 from "./(components)/TextSection1";
 import TextSection2 from "./(components)/TextSection2";
 import UserInterview from "../../public/images/user_interview.png";
+import Heading1 from "../components/Heading1";
+import Paragraph from "../components/Paragraph";
+import Heading2 from "../components/Heading2";
 
 interface Props {
   marginTop?: number;
@@ -26,10 +29,42 @@ const ProjectBrief = ({
         marginRight: marginRight ? `${marginRight}px` : undefined,
       }}
     >
-      <TextSection1
-        heading="Overview"
-        paragraph="Coffee Memory preserves the memorable notes people write on coffee shop walls without the mess. The website will help both coffee shops and people to make memories without having dirty walls and keeping the notes memorable."
-      />
+      <div className="flex justify-between items-start gap-8">
+        <div className="flex-1">
+          <Heading1
+            text="Overview"
+            uppercase={true}
+            fontSize={80}
+            letterSpacing={5}
+          />
+        </div>
+        <div className="flex-1">
+          <Paragraph
+            text="Coffee Memory preserves the memorable notes people write on coffee shop walls without the mess. The website will help both coffee shops and people to make memories without having dirty walls and keeping the notes memorable."
+            letterSpacing={1.2}
+          />
+          <div className="mt-10 flex justify-between">
+            <div>
+              <Heading2
+                text="Tools"
+                uppercase={true}
+                letterSpacing={1.7}
+                marginBottom={10}
+              />
+              <Paragraph text="Figma" letterSpacing={1.2} />
+            </div>
+            <div className="mr-10">
+              <Heading2
+                text="Duration"
+                uppercase={true}
+                letterSpacing={1.7}
+                marginBottom={10}
+              />
+              <Paragraph text="1 month" letterSpacing={1.2} />
+            </div>
+          </div>
+        </div>
+      </div>
       <TextSection1
         heading="The Ask"
         paragraph={`We seek support to develop "Coffee Memory", a digital solution that preserves the memorable notes people write in coffee shops, eliminating the mess while keeping the tradition alive. Our goal is to create a website/app that allows users to share and view these notes virtually, enhancing the coffee shop experience without dirtying walls.`}
