@@ -39,7 +39,12 @@ const CoffeeMemory = ({
       />
       <div className="flex-1 h-full flex flex-col justify-between">
         <div>
-          <Heading1 text="Coffee Memory" uppercase={true} letterSpacing={2.2} />
+          <Heading1
+            text="Coffee Memory"
+            uppercase={true}
+            letterSpacing={2.2}
+            marginBottom={16}
+          />
           <Heading3 text="UX Design, UI, Research" />
         </div>
         <Paragraph
