@@ -32,7 +32,7 @@ const CompetitorAnalysis = ({
       <Heading1
         text="Competitor Analysis"
         uppercase={true}
-        fontSize={80}
+        fontSize={70}
         letterSpacing={5}
       />
       <Paragraph

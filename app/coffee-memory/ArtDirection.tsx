@@ -30,6 +30,7 @@ const ArtDirection = ({
       <Heading1
         text="Art Direction"
         uppercase={true}
+        fontSize={70}
         letterSpacing={2.2}
         marginBottom={34}
       />

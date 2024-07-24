@@ -14,7 +14,7 @@ const TextSection1 = ({ heading, paragraph }: Props) => {
         <Heading1
           text={heading}
           uppercase={true}
-          fontSize={80}
+          fontSize={70}
           letterSpacing={5}
         />
       </div>

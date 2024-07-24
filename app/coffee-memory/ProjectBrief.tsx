@@ -34,7 +34,7 @@ const ProjectBrief = ({
           <Heading1
             text="Overview"
             uppercase={true}
-            fontSize={80}
+            fontSize={70}
             letterSpacing={5}
           />
         </div>
@@ -70,7 +70,7 @@ const ProjectBrief = ({
         paragraph={`We seek support to develop "Coffee Memory", a digital solution that preserves the memorable notes people write in coffee shops, eliminating the mess while keeping the tradition alive. Our goal is to create a website/app that allows users to share and view these notes virtually, enhancing the coffee shop experience without dirtying walls.`}
       />
       <TextSection1
-        heading="The Problem"
+        heading="The &nbsp; Problem"
         paragraph={`Traditional note-sharing in coffee shops creates cluttered and dirty walls, detracting from the ambiance and requiring frequent cleaning. While people love leaving and reading these personal messages, the physical method is unsustainable and impractical. Coffee shops need a way to preserve this cherished practice without compromising cleanliness and aesthetics.`}
       />
       <TextSection1

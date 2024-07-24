@@ -29,7 +29,7 @@ const UserFlow = ({
       <Heading1
         text="User Flow"
         uppercase={true}
-        fontSize={80}
+        fontSize={70}
         letterSpacing={5}
         marginBottom={60}
       />

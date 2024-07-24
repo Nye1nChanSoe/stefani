@@ -32,8 +32,9 @@ const UIDesignsAndHowItWorks = ({
       }}
     >
       <Heading1
-        text="UI DESIGNS & HOW IT WORKS"
+        text="UI DESIGNS"
         uppercase={true}
+        fontSize={70}
         letterSpacing={2.2}
         marginBottom={34}
       />
