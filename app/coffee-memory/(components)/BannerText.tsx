@@ -1,24 +1,23 @@
 import React from "react";
-import Heading1 from "../components/Heading1";
-import Image from "next/image";
-
-import Img from "../../public/images/userflow.jpeg";
 
 interface Props {
+  text: string;
   marginTop?: number;
   marginBottom?: number;
   marginLeft?: number;
   marginRight?: number;
 }
 
-const UserFlow = ({
+const BannerText = ({
+  text,
   marginTop,
   marginBottom,
   marginLeft,
   marginRight,
 }: Props) => {
   return (
-    <section
+    <div
+      className="text-[180px] font-barlow-condensed font-bold tracking-wider uppercase leading-none"
       style={{
         marginTop: marginTop ? `${marginTop}px` : undefined,
         marginBottom: marginBottom ? `${marginBottom}px` : undefined,
@@ -26,16 +25,9 @@ const UserFlow = ({
         marginRight: marginRight ? `${marginRight}px` : undefined,
       }}
     >
-      <Heading1
-        text="User Flow"
-        uppercase={true}
-        fontSize={54}
-        letterSpacing={2.7}
-        marginBottom={60}
-      />
-      <Image src={Img} alt="User Flow" className="rounded-lg object-contain" />
-    </section>
+      {text}
+    </div>
   );
 };
 
-export default UserFlow;
+export default BannerText;

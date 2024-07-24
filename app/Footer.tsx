@@ -6,13 +6,13 @@ const Footer = () => {
     <footer className="mx-auto px-[50px] w-full flex justify-between items-center bg-primary py-[16px]">
       <Heading1 text="Contact" color="background" />
       <div className="flex items-center gap-x-12">
-        <p className="text-[30px] font-open-sans font-bold leading-8 cursor-pointer">
+        <p className="text-[30px] font-open-sans font-bold leading-8 cursor-pointer transition-colors duration-500 hover:text-background">
           Whatsapp
         </p>
-        <p className="text-[30px] font-open-sans font-bold leading-8 cursor-pointer">
+        <p className="text-[30px] font-open-sans font-bold leading-8 cursor-pointer transition-colors duration-500 hover:text-background">
           Instagram
         </p>
-        <p className="text-[30px] font-open-sans font-bold leading-8 cursor-pointer">
+        <p className="text-[30px] font-open-sans font-bold leading-8 cursor-pointer transition-colors duration-500 hover:text-background">
           LinkedIn
         </p>
       </div>

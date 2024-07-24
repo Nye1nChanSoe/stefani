@@ -13,7 +13,6 @@ interface Props {
 const Heading2 = ({
   text,
   uppercase,
-  fontSize,
   color,
   marginTop,
   marginBottom,
@@ -21,7 +20,7 @@ const Heading2 = ({
 }: Props) => {
   return (
     <h2
-      className={`text-[28px] font-bold font-open-sans ${
+      className={`text-[28px] font-bold font-open-sans leading-none ${
         uppercase ? "uppercase" : ""
       } text-${color}`}
       style={{

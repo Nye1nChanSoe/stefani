@@ -5,7 +5,7 @@ import CompetitorAnalysis from "./CompetitorAnalysis";
 import UserFlow from "./UserFlow";
 import WireFrame from "./WireFrame";
 import ArtDirection from "./ArtDirection";
-import UIDesignsAndHowItWorks from "./UIDesignsAndHowItWorks";
+import UIDesigns from "./UIDesigns";
 import Outcomes from "./Outcomes";
 
 const page = () => {
@@ -18,7 +18,7 @@ const page = () => {
         <UserFlow marginBottom={160} />
         <WireFrame marginBottom={160} />
         <ArtDirection marginBottom={160} />
-        <UIDesignsAndHowItWorks marginBottom={160} />
+        <UIDesigns marginBottom={160} />
         <Outcomes marginBottom={160} />
       </main>
     </>

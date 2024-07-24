@@ -1,24 +1,30 @@
 import React from "react";
-import Heading1 from "../components/Heading1";
-import Image from "next/image";
-
-import Img from "../../public/images/userflow.jpeg";
 
 interface Props {
+  children: React.ReactNode;
   marginTop?: number;
   marginBottom?: number;
   marginLeft?: number;
   marginRight?: number;
+  x?: number;
+  y?: number;
 }
 
-const UserFlow = ({
+const Spacer = ({
+  children,
+  y,
+  x,
   marginTop,
   marginBottom,
   marginLeft,
   marginRight,
 }: Props) => {
+  const gapX = x ? `space-x-[${x}px]` : "";
+  const gapY = y ? `space-y-[${y}px]` : "";
+
   return (
-    <section
+    <div
+      className={`${gapX} ${gapY}`}
       style={{
         marginTop: marginTop ? `${marginTop}px` : undefined,
         marginBottom: marginBottom ? `${marginBottom}px` : undefined,
@@ -26,16 +32,9 @@ const UserFlow = ({
         marginRight: marginRight ? `${marginRight}px` : undefined,
       }}
     >
-      <Heading1
-        text="User Flow"
-        uppercase={true}
-        fontSize={54}
-        letterSpacing={2.7}
-        marginBottom={60}
-      />
-      <Image src={Img} alt="User Flow" className="rounded-lg object-contain" />
-    </section>
+      {children}
+    </div>
   );
 };
 
-export default UserFlow;
+export default Spacer;

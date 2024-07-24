@@ -26,19 +26,19 @@ const AboutMe = ({
         marginRight: marginRight ? `${marginRight}px` : undefined,
       }}
     >
-      <Heading1
-        text="About me"
-        uppercase={true}
-        letterSpacing={2.4}
-        marginBottom={54}
-      />
-      <div className="flex justify-between items-center gap-8 h-[510px]">
+      <div className="flex justify-between gap-8 h-[510px]">
         <Image
           src={Me}
           alt="Stefani"
           className="w-[565px] h-full rounded-lg object-cover object-bottom shrink-0"
         />
         <div className="flex-1">
+          <Heading1
+            text="About me"
+            uppercase={true}
+            letterSpacing={2.4}
+            marginBottom={44}
+          />
           <Paragraph
             text="I’m freelance UX/UI Designer and graduated with Master of Interaction Design from Harbour Space University @ UTCC. I’m very passionate in designing and always happy to learn how designs really work."
             letterSpacing={1.2}

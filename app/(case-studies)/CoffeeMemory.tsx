@@ -43,14 +43,18 @@ const CoffeeMemory = ({
             text="Coffee Memory"
             uppercase={true}
             letterSpacing={2.2}
-            marginBottom={16}
+            marginBottom={10}
           />
-          <Heading3 text="UX Design, UI, Research" />
+          <Heading3
+            text="UX Design, UI, Research"
+            marginBottom={44}
+            letterSpacing={2.4}
+          />
+          <Paragraph
+            text="Coffee Memory preserves the memorable notes without the mess, helping coffee shops and people create lasting memories without dirtying walls."
+            letterSpacing={1.2}
+          />
         </div>
-        <Paragraph
-          text="Coffee Memory preserves the memorable notes without the mess, helping coffee shops and people create lasting memories without dirtying walls."
-          letterSpacing={1.2}
-        />
         <Link
           className="w-fit px-[30px] py-[16px] rounded-lg tracking-wider bg-primary text-white font-open-sans shadow-md text-[20px] font-bold focus:outline-none transition-all duration-500 hover:scale-105 hover:text-background"
           href="/coffee-memory"

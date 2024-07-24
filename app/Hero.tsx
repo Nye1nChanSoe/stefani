@@ -1,5 +1,5 @@
 import React from "react";
-import HeroAnimatedText from "./HeroAnimatedText";
+import HeroAnimatedText from "./components/HeroAnimatedText";
 import S from "../public/images/S.jpeg";
 import T from "../public/images/T.jpeg";
 import E from "../public/images/E.png";
@@ -37,8 +37,8 @@ const Hero = ({ marginTop, marginBottom, marginLeft, marginRight }: Props) => {
         <HeroAnimatedText text="I" imageSrc={I.src} />
       </div>
       <div className="flex w-full justify-between">
-        <Heading1 text="UX & UI Designer" />
-        <Heading1 text="Based in Bangkok" />
+        <Heading1 text="UX & UI Designer" uppercase={true} />
+        <Heading1 text="Based in Bangkok" uppercase={true} />
       </div>
     </section>
   );

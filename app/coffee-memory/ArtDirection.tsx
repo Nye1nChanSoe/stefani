@@ -2,8 +2,10 @@ import React from "react";
 import Heading1 from "../components/Heading1";
 import Image from "next/image";
 
-import LogoDesign from "../../public/images/logo_design.jpeg";
-import ColorPalette from "../../public/images/color_palette.jpeg";
+import LogoDesign from "../../public/images/logo_design.png";
+import ColorPalette from "../../public/images/color_palette.png";
+import SectionFlexContainer from "./(components)/SectionFlexContainer";
+import Paragraph from "../components/Paragraph";
 
 interface Props {
   marginTop?: number;
@@ -27,25 +29,31 @@ const ArtDirection = ({
         marginRight: marginRight ? `${marginRight}px` : undefined,
       }}
     >
-      <Heading1
-        text="Art Direction"
-        uppercase={true}
-        fontSize={70}
-        letterSpacing={2.2}
-        marginBottom={34}
+      <SectionFlexContainer
+        left={
+          <div className="space-y-[44px]">
+            <Heading1
+              text="Art Direction"
+              uppercase={true}
+              fontSize={54}
+              letterSpacing={2.7}
+              marginBottom={34}
+            />
+            <Image src={LogoDesign} alt="Logo Design" className="rounded-lg" />
+            <Image
+              src={ColorPalette}
+              alt="Color Palette"
+              className="rounded-lg"
+            />
+          </div>
+        }
+        right={
+          <Paragraph
+            text="Art direction ensures a cohesive and visually appealing experience for Coffee Memory, reflecting the inviting atmosphere of coffee shops. It creates a consistent aesthetic, making the platform intuitive and engaging, helping it stand out and resonate with users."
+            letterSpacing={1.2}
+          />
+        }
       />
-      <div className="flex justify-between items-start gap-8">
-        <Image
-          src={LogoDesign}
-          alt="Logo Design"
-          className="w-[565px] h-[426px] rounded-lg shrink-0"
-        />
-        <Image
-          src={ColorPalette}
-          alt="Color Palette"
-          className="w-[565px] h-[426px] rounded-lg shrink-0"
-        />
-      </div>
     </section>
   );
 };
