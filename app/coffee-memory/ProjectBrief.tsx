@@ -109,7 +109,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
               <Image
                 src={UserInterview}
                 alt="User Interview"
-                className="w-[465px] h-[440px] object-cover object-top rounded-lg shrink-0"
+                className="rounded-lg shrink-0"
               />
             </>
           }
