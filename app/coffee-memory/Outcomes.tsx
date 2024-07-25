@@ -77,7 +77,7 @@ const TheThingsTwo = ({
       <SectionFlexContainer
         left={
           <Heading1
-            text="Team Work"
+            text="TeamWork"
             uppercase={true}
             fontSize={56}
             letterSpacing={2.4}
