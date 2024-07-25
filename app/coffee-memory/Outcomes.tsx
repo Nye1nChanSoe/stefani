@@ -31,7 +31,7 @@ const TheThingsTwo = ({
           <Heading1
             text="Usability Testing"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -47,7 +47,7 @@ const TheThingsTwo = ({
           <Heading1
             text="Feedback"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -63,7 +63,7 @@ const TheThingsTwo = ({
           <Heading1
             text="Reflection"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -79,7 +79,7 @@ const TheThingsTwo = ({
           <Heading1
             text="TeamWork"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }

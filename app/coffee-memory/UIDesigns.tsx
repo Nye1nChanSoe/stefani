@@ -39,7 +39,7 @@ const UIDesigns = ({
           <Heading1
             text="UI DESIGNS"
             uppercase={true}
-            fontSize={54}
+            fontSize={46}
             letterSpacing={2.7}
           />
         }
@@ -61,7 +61,7 @@ const UIDesigns = ({
         }
         right={
           <>
-            <Heading2 text="Log In Form" uppercase={true} marginBottom={44} />
+            <Heading2 text="Login Form" uppercase={true} marginBottom={44} />
             <Paragraph
               text="This is the sign up form and customers can log in with their various accounts."
               letterSpacing={1.2}

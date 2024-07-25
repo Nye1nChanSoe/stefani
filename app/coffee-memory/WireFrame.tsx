@@ -34,7 +34,7 @@ const WireFrame = ({
           <Heading1
             text="Wireframes"
             uppercase={true}
-            fontSize={54}
+            fontSize={46}
             letterSpacing={2.7}
             marginBottom={34}
           />

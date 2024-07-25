@@ -34,7 +34,7 @@ const ProjectBrief = ({
           <Heading1
             text="The Ask"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -51,7 +51,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
           <Heading1
             text="The Problem"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -67,7 +67,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
           <Heading1
             text="The Solution"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -83,7 +83,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
           <Heading1
             text="User Research"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
@@ -98,7 +98,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
         <Heading1
           text="User Interview"
           uppercase={true}
-          fontSize={56}
+          fontSize={46}
           letterSpacing={5}
           marginBottom={44}
         />
@@ -109,7 +109,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
               <Image
                 src={UserInterview}
                 alt="User Interview"
-                className="w-[565px] h-[440px] object-cover object-top rounded-lg shrink-0"
+                className="w-[465px] h-[440px] object-cover object-top rounded-lg shrink-0"
               />
             </>
           }
@@ -126,7 +126,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
           <Heading1
             text="Key Features"
             uppercase={true}
-            fontSize={56}
+            fontSize={46}
             letterSpacing={2.4}
           />
         }
