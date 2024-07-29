@@ -23,6 +23,9 @@ const config: Config = {
       fontFamily: {
         "barlow-condensed": ["Barlow Condensed", ...fontFamily.sans],
         "open-sans": ["Open Sans", ...fontFamily.sans],
+        "dm-sans": ["DM Sans", ...fontFamily.sans],
+        "noto-sans-myanmar": ["Noto Sans Myanmar", ...fontFamily.sans],
+        montserrat: ["Montserrat", ...fontFamily.sans],
       },
     },
   },

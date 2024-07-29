@@ -5,6 +5,7 @@ import SectionFlexContainer from "./(components)/SectionFlexContainer";
 import Image from "next/image";
 
 import UserInterview from "../../public/images/user_interview.png";
+import TheSolution from "../../public/images/the_solution.jpeg";
 
 interface Props {
   marginTop?: number;
@@ -34,8 +35,8 @@ const ProjectBrief = ({
           <Heading1
             text="The Ask"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={
@@ -51,8 +52,8 @@ a digital solution that preserves the memorable notes people write in coffee sho
           <Heading1
             text="The Problem"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={
@@ -62,29 +63,40 @@ a digital solution that preserves the memorable notes people write in coffee sho
           />
         }
       />
-      <SectionFlexContainer
-        left={
-          <Heading1
-            text="The Solution"
-            uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
-          />
-        }
-        right={
-          <Paragraph
-            text="Coffee Memory provides a digital platform for creating, sharing, and reading notes, preserving the tradition of coffee shop messages without the mess, ensuring clean and inviting spaces."
-            letterSpacing={1.2}
-          />
-        }
-      />
+      <div>
+        <Heading1
+          text="The Solution"
+          uppercase={true}
+          fontSize={40}
+          letterSpacing={5}
+          marginBottom={44}
+        />
+        <SectionFlexContainer
+          alignItems="center"
+          left={
+            <>
+              <Image
+                src={TheSolution}
+                alt="The Solution"
+                className="rounded-lg shrink-0"
+              />
+            </>
+          }
+          right={
+            <Paragraph
+              text="Coffee Memory provides a digital platform for creating, sharing, and reading notes, preserving the tradition of coffee shop messages without the mess, ensuring clean and inviting spaces."
+              letterSpacing={1.2}
+            />
+          }
+        />
+      </div>
       <SectionFlexContainer
         left={
           <Heading1
             text="User Research"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={
@@ -98,7 +110,7 @@ a digital solution that preserves the memorable notes people write in coffee sho
         <Heading1
           text="User Interview"
           uppercase={true}
-          fontSize={46}
+          fontSize={40}
           letterSpacing={5}
           marginBottom={44}
         />
@@ -126,8 +138,8 @@ a digital solution that preserves the memorable notes people write in coffee sho
           <Heading1
             text="Key Features"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={

@@ -29,8 +29,8 @@ const UserFlow = ({
       <Heading1
         text="User Flow"
         uppercase={true}
-        fontSize={46}
-        letterSpacing={2.7}
+        fontSize={40}
+        letterSpacing={2.2}
         marginBottom={60}
       />
       <Image src={Img} alt="User Flow" className="rounded-lg object-contain" />

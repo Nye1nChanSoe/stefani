@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Open_Sans } from "next/font/google";
+import {
+  Barlow_Condensed,
+  Open_Sans,
+  DM_Sans,
+  Noto_Sans_Myanmar,
+  Montserrat,
+} from "next/font/google";
 import "./globals.css";
 import Footer from "./Footer";
 
@@ -9,6 +15,21 @@ const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow",
 });
 const openSans = Open_Sans({
+  weight: "500",
+  subsets: ["latin"],
+  variable: "--font-encode",
+});
+const dmSans = DM_Sans({
+  weight: "500",
+  subsets: ["latin"],
+  variable: "--font-encode",
+});
+const notoSansMyanmar = Noto_Sans_Myanmar({
+  weight: "500",
+  subsets: ["myanmar"],
+  variable: "--font-encode",
+});
+const montserrat = Montserrat({
   weight: "500",
   subsets: ["latin"],
   variable: "--font-encode",
@@ -30,6 +51,9 @@ export default function RootLayout({
         className={`
           ${barlowCondensed.variable}
           ${openSans.variable}
+          ${dmSans.variable}
+          ${notoSansMyanmar.variable}
+          ${montserrat.variable}
         bg-background text-white`}
       >
         {children}

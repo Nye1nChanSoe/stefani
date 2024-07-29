@@ -2,10 +2,9 @@ import React from "react";
 import Heading1 from "../components/Heading1";
 import Paragraph from "../components/Paragraph";
 import Heading2 from "../components/Heading2";
-import Image from "next/image";
 
-import TableAnalysis from "../../public/images/table.jpeg";
 import SectionFlexContainer from "./(components)/SectionFlexContainer";
+import TableCompetitorAnalysis from "./(components)/TableCompetitorAnalysis";
 
 interface Props {
   marginTop?: number;
@@ -30,13 +29,13 @@ const CompetitorAnalysis = ({
       }}
     >
       <SectionFlexContainer
-        marginBottom={94}
+        marginBottom={60}
         left={
           <Heading1
             text="Competitor Analysis"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={
@@ -44,8 +43,16 @@ const CompetitorAnalysis = ({
             <Paragraph
               text="Competitor analysis helps Coffee Memory identify market gaps and opportunities by understanding existing solutions, allowing us to create a unique and improved user experience."
               letterSpacing={1.2}
-              marginBottom={44}
             />
+          </>
+        }
+      />
+      <TableCompetitorAnalysis marginBottom={60} />
+      <SectionFlexContainer
+        marginBottom={160}
+        left={<></>}
+        right={
+          <>
             <div className="mb-[44px]">
               <Heading2
                 text="Evernote"
@@ -85,23 +92,21 @@ const CompetitorAnalysis = ({
           </>
         }
       />
-      <Image src={TableAnalysis} alt="Analysis Table" className="rounded-lg" />
       <SectionFlexContainer
-        marginTop={94}
-        left={<></>}
+        marginBottom={160}
+        left={
+          <Heading1
+            text="Key Takeaways"
+            uppercase={true}
+            fontSize={40}
+            letterSpacing={2.2}
+          />
+        }
         right={
-          <>
-            <Heading2
-              text="Key Takeaway"
-              uppercase={true}
-              letterSpacing={1.7}
-              marginBottom={20}
-            />
-            <Paragraph
-              text="Evernote, Padlet, and Miro have useful note-sharing features but aren't designed for coffee shops and lack personal note-sharing and review options. Coffee Memory, however, is tailored for coffee shops with a user-friendly interface, visual note-sharing, and features for personal notes and reviews, making it a better fit for this niche."
-              letterSpacing={1.2}
-            />
-          </>
+          <Paragraph
+            text="Evernote, Padlet, and Miro have useful note-sharing features but aren't designed for coffee shops and lack personal note-sharing and review options. Coffee Memory, however, is tailored for coffee shops with a user-friendly interface, visual note-sharing, and features for personal notes and reviews, making it a better fit for this niche."
+            letterSpacing={1.2}
+          />
         }
       />
     </section>

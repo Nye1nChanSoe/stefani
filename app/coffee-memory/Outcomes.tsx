@@ -29,26 +29,10 @@ const TheThingsTwo = ({
       <SectionFlexContainer
         left={
           <Heading1
-            text="Usability Testing"
-            uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
-          />
-        }
-        right={
-          <Paragraph
-            text="User testing showed that Coffee Memory's digital note-sharing is valued for its cleanliness and ease of use. Users liked the virtual wall display and multimedia features but suggested improvements in search functionality and customization. Overall, the platform effectively enhances the note-sharing experience."
-            letterSpacing={1.2}
-          />
-        }
-      />
-      <SectionFlexContainer
-        left={
-          <Heading1
             text="Feedback"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={
@@ -63,8 +47,8 @@ const TheThingsTwo = ({
           <Heading1
             text="Reflection"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={
@@ -79,8 +63,8 @@ const TheThingsTwo = ({
           <Heading1
             text="TeamWork"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.4}
+            fontSize={40}
+            letterSpacing={2.2}
           />
         }
         right={

@@ -3,8 +3,13 @@ import React from "react";
 import Heading1 from "../components/Heading1";
 import Paragraph from "../components/Paragraph";
 
-import Wireframes from "../../public/images/wireframes.png";
 import SectionFlexContainer from "./(components)/SectionFlexContainer";
+import WF1 from "../../public/images/wf_1.jpeg";
+import WF2 from "../../public/images/wf_2.jpeg";
+import WF3 from "../../public/images/wf_3.jpeg";
+import WF4 from "../../public/images/wf_4.jpeg";
+import WF5 from "../../public/images/wf_5.jpeg";
+import WF6 from "../../public/images/wf_6.jpeg";
 
 interface Props {
   marginTop?: number;
@@ -34,8 +39,8 @@ const WireFrame = ({
           <Heading1
             text="Wireframes"
             uppercase={true}
-            fontSize={46}
-            letterSpacing={2.7}
+            fontSize={40}
+            letterSpacing={2.2}
             marginBottom={34}
           />
         }
@@ -46,7 +51,38 @@ const WireFrame = ({
           />
         }
       />
-      <Image src={Wireframes} alt="Wireframes" className="rounded-lg" />
+      <div className="flex gap-x-10">
+        <div className="flex flex-col gap-y-10">
+          <Image
+            src={WF1}
+            alt="Wireframe 1"
+            className="flex-1 object-cover rounded-lg"
+          />
+          <Image
+            src={WF2}
+            alt="Wireframe 2"
+            className="flex-1 object-cover rounded-lg"
+          />
+        </div>
+        <div>
+          <Image
+            src={WF3}
+            alt="Wireframe 3"
+            className="object-cover h-full rounded-lg"
+          />
+        </div>
+        <div className="">
+          <Image
+            src={WF4}
+            alt="Wireframe 4"
+            className="object-cover rounded-lg"
+          />
+        </div>
+        <div className="flex flex-col gap-y-10">
+          <Image src={WF5} alt="Wireframe 5" className="rounded-lg" />
+          <Image src={WF6} alt="Wireframe 6" className="rounded-lg" />
+        </div>
+      </div>
     </section>
   );
 };

@@ -26,11 +26,11 @@ const AboutMe = ({
         marginRight: marginRight ? `${marginRight}px` : undefined,
       }}
     >
-      <div className="flex justify-between gap-8 h-[510px]">
+      <div className="flex justify-between items-center gap-8 h-[510px]">
         <Image
           src={Me}
           alt="Stefani"
-          className="w-[565px] h-full rounded-lg object-cover object-bottom shrink-0"
+          className="w-[565px] h-full rounded-[400px] object-cover object-bottom shrink-0"
         />
         <div className="flex-1">
           <Heading1

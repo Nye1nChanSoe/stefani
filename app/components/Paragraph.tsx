@@ -8,6 +8,7 @@ interface Props {
   letterSpacing?: number;
   color?: "primary" | "white" | "background" | "brown";
   fontFamily?: "open-sans" | "barlow";
+  bold?: boolean;
 }
 
 const Paragraph = ({
@@ -17,6 +18,7 @@ const Paragraph = ({
   marginBottom,
   letterSpacing,
   color,
+  bold,
 }: Props) => {
   const colorClass = (() => {
     switch (color) {
@@ -33,9 +35,9 @@ const Paragraph = ({
 
   return (
     <p
-      className={`text-[20px] font-open-sans font-normal leading-[30px] ${
+      className={`text-[20px] font-open-sans leading-[30px] ${
         uppercase ? "uppercase" : ""
-      } ${colorClass}`}
+      } ${bold ? "font-bold" : "font-normal"} ${colorClass}`}
       style={{
         marginTop: marginTop ? `${marginTop}px` : undefined,
         marginBottom: marginBottom ? `${marginBottom}px` : undefined,
