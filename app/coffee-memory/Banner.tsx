@@ -21,7 +21,7 @@ const Banner = ({
 }: Props) => {
   return (
     <section
-      className="h-[880px] bg-no-"
+      className="h-[880px] bg-no-repeat w-full object-cover"
       style={{
         backgroundImage: `url(${BannerImage.src})`,
         marginTop: marginTop ? `${marginTop}px` : undefined,
